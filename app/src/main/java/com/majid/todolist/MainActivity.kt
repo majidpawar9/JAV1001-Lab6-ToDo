@@ -2,11 +2,9 @@ package com.majid.todolist
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.TextView
+import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import android.widget.ListView
 import android.widget.Toast
 import com.majid.todolist.databinding.ActivityMainBinding
 
@@ -32,6 +30,14 @@ class MainActivity : AppCompatActivity() {
             binding.toDoList.setAdapter(arrayAdapter)
 
         }
+
+        binding.toDoList.onItemLongClickListener =
+            AdapterView.OnItemLongClickListener{ adapterView: AdapterView<*>, view2: View, i: Int, l: Long ->
+                Toast.makeText(applicationContext, "Miss", Toast.LENGTH_SHORT).show()
+                userInputList.removeAt(i)
+                binding.toDoList.setAdapter(arrayAdapter)
+                true
+            }
 
     }
 }
