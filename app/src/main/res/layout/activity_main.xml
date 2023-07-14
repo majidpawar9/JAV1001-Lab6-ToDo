@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:visibility="visible">
 
-    <!--    Title-->
+<!--    Title-->
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
@@ -18,7 +18,7 @@
         android:textSize="48sp"
         android:textStyle="bold" />
 
-    <!--   Input Field-->
+<!--   Input Field-->
     <EditText
         android:id="@+id/userInput"
         android:layout_width="wrap_content"
@@ -27,7 +27,7 @@
         android:hint="@string/edit_text_hint"
         android:inputType="textCapSentences|textAutoCorrect"></EditText>
 
-    <!--    Conversion Button-->
+<!--    Add String Button-->
     <Button
         android:id="@+id/addButton"
         android:layout_width="wrap_content"
@@ -36,13 +36,15 @@
         android:backgroundTint="@color/design_default_color_error"
         android:text="@string/add_button" />
 
+<!--    Hint to delete-->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/help_text"
+        android:hint="@string/help_text"
         android:textAlignment="center" />
 
+<!--    To-Do List-->
     <ListView
         android:id="@+id/toDoList"
         android:layout_width="match_parent"
