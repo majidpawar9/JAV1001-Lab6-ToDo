@@ -34,10 +34,17 @@
         android:layout_gravity="center"
         android:backgroundTint="@color/design_default_color_error"
         android:text="Add" />
-
+<!--<CheckedTextView-->
+<!--    android:checkMark="?android:attr/listChoiceIndicatorMultiple"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="Checked view"-->
+<!--    android:checked="false"/>-->
         <ListView
+            android:choiceMode="multipleChoice"
             android:id="@+id/toDoList"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            />
 
 </LinearLayout>
