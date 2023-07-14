@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">ToDoList</string>
+    <string name="edit_text_hint">Write To-do here</string>
+    <string name="add_button">Add</string>
+    <string name="help_text">Please longpress to delete a To-Do</string>
 </resources>
